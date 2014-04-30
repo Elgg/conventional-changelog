@@ -58,5 +58,16 @@ By default, calls the callback with a string containing a changelog from the pre
 
 * `warn` `{function()}` - What warn function to use. For example, `{warn: grunt.log.writeln}`. By default, uses `console.warn`.
 
+* `types` `{Object}` - A map of commit types to section headings.
+  This allows you to customize what sections will be included in the changelog.
+
+  By default, always includes `{fix: 'Bug Fixes', feat: 'Features', breaks: 'Breaking Changes'}`
+  
+  Add new sections: `{perf:'Performance'}`
+  
+  Rename a section: `{feat:'New stuff'}`
+
+  Alias two types to the same section: `{feat: 'Features', feature: 'Features'}`
+
 ## License
 BSD

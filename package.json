@@ -1,7 +1,6 @@
 {
-  "name": "conventional-changelog",
-  "codename": "refine",
-  "version": "0.0.8",
+  "name": "elgg-conventional-changelog",
+  "version": "0.0.1",
   "description": "Generate a markdown changelog from git commit metadata",
   "main": "index.js",
   "scripts": {
@@ -14,10 +13,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ajoslin/conventional-changelog.git"
+    "url": "https://github.com/Elgg/conventional-changelog.git"
   },
   "keywords": [
-    "changelog"
+    "changelog",
+    "elgg"
   ],
   "license": "BSD",
   "contributors": [
@@ -29,6 +29,9 @@
     },
     {
       "name": "Andy Joslin"
+    },
+    {
+      "name": "Evan Winslow"
     }
   ],
   "dependencies": {

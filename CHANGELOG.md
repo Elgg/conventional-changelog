@@ -1,3 +1,15 @@
+<a name="0.1.1"></a>
+### 0.1.1  (2014-05-03)
+
+#### Contributors
+
+* [Evan Winslow](mailto:evan.b.winslow@gmail.com) (2)
+
+#### Features
+
+* **changelog:** only include changes that aren't already released ([2bfade69](https://github.com/Elgg/conventional-changelog/commit/2bfade69b038b6030d3dab7e61ec5e6803f95384))
+
+
 <a name="0.1.0"></a>
 ## 0.1.0  (2014-05-03)
 

@@ -19,19 +19,19 @@ function generate(options, done) {
     return done('No version specified');
   }
 
-  git.latestTag(function(err, tag) {
-    if (err || !tag) return done('Failed to read git tags.\n'+err);
-    writeChangelog(tag);
+  git.getTags(function(err, tags) {
+    if (err || !tags) return done('Failed to read git tags.\n'+err);
+    writeChangelog(tags);
   });
 
-  function writeChangelog(latestTag) {
-    options.from = options.from || latestTag;
+  function writeChangelog(tags) {
+    options.exclude = options.exclude || tags;
     options.to = options.to || 'HEAD';
 
-    options.log('Generating changelog from %s to %s...', options.from, options.to);
+    options.log('Generating changelog for %s...', options.version);
 
     git.getLog({
-      from: options.from, 
+      exclude: options.exclude, 
       to: options.to,
     }, function(err, gitLog) {
       if (err) return done('Failed to read git log.\n'+err);

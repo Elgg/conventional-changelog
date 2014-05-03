@@ -21,27 +21,30 @@ function generate(options, done) {
 
   git.latestTag(function(err, tag) {
     if (err || !tag) return done('Failed to read git tags.\n'+err);
-    getChangelogCommits(tag);
+    writeChangelog(tag);
   });
 
-  function getChangelogCommits(latestTag) {
+  function writeChangelog(latestTag) {
     options.from = options.from || latestTag;
     options.to = options.to || 'HEAD';
 
     options.log('Generating changelog from %s to %s...', options.from, options.to);
 
-    git.getCommits({
+    git.getLog({
       from: options.from, 
       to: options.to,
-    }, function(err, commits) {
+    }, function(err, gitLog) {
       if (err) return done('Failed to read git log.\n'+err);
-      writeLog(commits);
+      
+      writeGitLog(gitLog);
     });
   }
 
-  function writeLog(commits) {
-    options.log('Parsed %d commits.', commits.length);
-    writer.writeLog(commits, options, function(err, changelog) {
+  function writeGitLog(gitLog) {
+    options.log('Parsed %d commits.', gitLog.commits.length);
+    options.log('Parsed %d contributors.', gitLog.contributors.length);
+    
+    writer.writeLog(gitLog, options, function(err, changelog) {
       if (err) return done('Failed to write changelog.\n'+err);
 
       if (options.file && fs.existsSync(options.file)) {

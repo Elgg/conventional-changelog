@@ -44,7 +44,8 @@ Any line of the commit message cannot be longer 100 characters! This allows the 
 to read on github as well as in various git tools.
 
 ### Type
-Is recommended to be one of these. Only **feat** and **fix** show up in the changelog, in addition to breaking changes (see breaking changes section at bottom).
+Is recommended to be one of these. Only **feat** and **fix** show up in the changelog by default,
+in addition to breaking changes (see breaking changes section at bottom).
 
 * **feat**: A new feature
 * **fix**: A bug fix

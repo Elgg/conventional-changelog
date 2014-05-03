@@ -1,3 +1,16 @@
+<a name="0.1.0"></a>
+## 0.1.0  (2014-05-03)
+
+#### Contributors
+
+* [Evan Winslow](mailto:evan.b.winslow@gmail.com) (3)
+
+#### Features
+
+* **changelog:** include contributors in changelogs ([0dbb9503](https://github.com/Elgg/conventional-changelog/commit/0dbb9503979c225b206641cac67c7d7db7e0aecb))
+* **types:** allow custom types and section headings ([e7682f68](https://github.com/Elgg/conventional-changelog/commit/e7682f68c0b4f2890338a0bc7b5b9482e0fff2e0))
+
+
 <a name="0.0.8"></a>
 ### 0.0.8 "refine" (2014-04-10)
 

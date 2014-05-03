@@ -1,6 +1,6 @@
 {
   "name": "elgg-conventional-changelog",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Generate a markdown changelog from git commit metadata",
   "main": "index.js",
   "scripts": {

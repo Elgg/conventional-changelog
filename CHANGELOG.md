@@ -1,3 +1,15 @@
+<a name="0.1.2"></a>
+### 0.1.2  (2014-05-06)
+
+#### Contributors
+
+* Evan Winslow (1)
+
+#### Bug Fixes
+
+* **changelog:** remove emails of contributors ([e0ecdbee](https://github.com/Elgg/conventional-changelog/commit/e0ecdbee6e226c0675863fb4f00f35097dd7effb))
+
+
 <a name="0.1.1"></a>
 ### 0.1.1  (2014-05-03)
 

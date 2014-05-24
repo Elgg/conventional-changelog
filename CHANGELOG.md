@@ -1,3 +1,17 @@
+<a name="0.1.3"></a>
+### 0.1.3  (2014-05-24)
+
+#### Contributors
+
+* Paweł Sroka (2)
+
+#### Bug Fixes
+
+* **git:**
+  * Corrected caret char escaping on Windows systems ([3dbfbcbe](https://github.com/Elgg/conventional-changelog/commit/3dbfbcbe9445222fec1deb30553cb458f228547d))
+  * Updated max subject length to 160 chars ([c44ae8da](https://github.com/Elgg/conventional-changelog/commit/c44ae8da7e29c5b3182a1a014871e1dbd67d86c9))
+
+
 <a name="0.1.2"></a>
 ### 0.1.2  (2014-05-06)
 

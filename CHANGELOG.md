@@ -1,3 +1,15 @@
+<a name="0.1.4"></a>
+### 0.1.4  (2016-03-23)
+
+#### Contributors
+
+* Steve Clay (1)
+
+#### Features
+
+* **changelog:** integrate CHANGELOG header as release notes ([9b29b6da](https://github.com/Elgg/conventional-changelog/commit/9b29b6da6366cd7c9c1a6844a9dc0addfe3241d6))
+
+
 <a name="0.1.3"></a>
 ### 0.1.3  (2014-05-24)
 
